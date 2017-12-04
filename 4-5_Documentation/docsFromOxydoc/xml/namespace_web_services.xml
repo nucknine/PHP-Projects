@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_web_services" kind="namespace" language="PHP">
+    <compoundname>WebServices</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>John Smith <ulink url="mailto:john@smith.com">john@smith.com</ulink></para></simplesect>
+<ref refid="class_authentication" kindref="compound">Authentication</ref> <simplesect kind="copyright"><para>John Smith and Son  <ulink url="http://www.johnsmith.com/copyright/license.html">http://www.johnsmith.com/copyright/license.html</ulink> Not Free</para></simplesect>
+<ref refid="class_auth_accounts" kindref="compound">AuthAccounts</ref> class</para><para>This class implements the login method needed to handle actual user authentication. It extends <emphasis><ref refid="class_authentication" kindref="compound">Authentication</ref></emphasis> and implements the Accountable interface.</para><para><ref refid="class_authentication" kindref="compound">Authentication</ref> <simplesect kind="see"><para><ref refid="class_authentication" kindref="compound">Authentication</ref> </para></simplesect>
+<simplesect kind="author"><para>John Smith <ulink url="mailto:john@smith.com">john@smith.com</ulink> </para></simplesect>
+<simplesect kind="version"><para>0.3 </para></simplesect>
+<simplesect kind="since"><para>r12</para></simplesect>
+<ref refid="class_authentication" kindref="compound">Authentication</ref> handles user account info and login actions</para><para>This is an abstract class that serves as a blueprint for classes implementing authentication using different account validation schemes.</para><para><simplesect kind="see"><para><ref refid="class_auth_accounts" kindref="compound">AuthAccounts</ref> </para></simplesect>
+<simplesect kind="author"><para>John Smith <ulink url="mailto:john@smith.com">john@smith.com</ulink></para></simplesect>
+<ref refid="class_authentication" kindref="compound">Authentication</ref> <simplesect kind="version"><para>0.2 </para></simplesect>
+<simplesect kind="since"><para>r3</para></simplesect>
+<ref refid="interface_i_account" kindref="compound">IAccount</ref> interface for authentication</para><para>Any class that handles user authentication <bold>must</bold> implement this interface. It makes it almost trivial to check whether a user is currently logged in or not.</para><para><ref refid="class_authentication" kindref="compound">Authentication</ref> <simplesect kind="author"><para>John Smith <ulink url="mailto:john@smith.com">john@smith.com</ulink> </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+<simplesect kind="since"><para>r12</para></simplesect>
+<simplesect kind="author"><para>John Smith <ulink url="mailto:john@smith.com">john@smith.com</ulink></para></simplesect>
+Accounts <simplesect kind="copyright"><para>John Smith and Son  <ulink url="http://www.johnsmith.com/copyright/license.html">http://www.johnsmith.com/copyright/license.html</ulink> Not Free</para></simplesect>
+<ref refid="class_user" kindref="compound">User</ref> class</para><para>This class contains a hard-coded list of user accounts and the corresponding passwords. This is merely a development stub and should be implemented with some sort of permanent storage and security.</para><para>Accounts <simplesect kind="see"><para><ref refid="class_authentication" kindref="compound">Authentication</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_auth_accounts" kindref="compound">AuthAccounts</ref> </para></simplesect>
+<simplesect kind="author"><para>John Smith <ulink url="mailto:john@smith.com">john@smith.com</ulink> </para></simplesect>
+<simplesect kind="version"><para>0.4 </para></simplesect>
+<simplesect kind="since"><para>r14</para></simplesect>
+Bootstrap file</para><para>This is the form handler for the login application. It expects a user name and password via _POST.</para><para><simplesect kind="author"><para>John Smith <ulink url="mailto:john@smith.com">john@smith.com</ulink></para></simplesect>
+<ref refid="class_authentication" kindref="compound">Authentication</ref> <simplesect kind="copyright"><para>John Smith and Son  <ulink url="http://www.johnsmith.com/copyright/license.html">http://www.johnsmith.com/copyright/license.html</ulink> Not Free </para></simplesect>
+<simplesect kind="version"><para>0.5 </para></simplesect>
+<simplesect kind="since"><para>r6 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="classes/authentication/AuthAccounts.php" line="4" column="1"/>
+  </compounddef>
+</doxygen>

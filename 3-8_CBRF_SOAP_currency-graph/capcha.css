@@ -1,0 +1,82 @@
+.form-box {
+	display: inline-block;
+	width: 300px;
+	font-size: 16px;
+}
+.graph-box {
+	padding: 0;
+	margin-left: 20px;
+	background-color: rgba(180, 180, 180, 0.5);
+	display: inline-block;
+	width: 700px;
+	font-size: 16px;
+	height: auto;
+}
+
+.content {
+	font-size: 0;
+	background-color: rgba(220, 220, 220, 0.5);
+	width: 1020px;
+	height: auto;
+	margin: 200px auto 0 auto;
+}
+.capcha {
+	position: relative;
+	margin-bottom: 10px;
+	font-size: 0;
+	padding: 0;
+
+}
+.img {
+	display: inline-block;
+	width: 210px;
+}
+
+.refresh {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	display: inline-block;
+}
+.refbtn {
+	position: absolute;
+	top:0;
+	width: 90px;
+	height:40px;
+
+}
+.form {
+	box-sizing: border-box;
+	padding: 20px;
+	display: block;
+	width: 300px;
+	background: silver;
+	border: 1px solid gray;
+}
+
+.form-graph {
+	box-sizing: border-box;
+	padding: 20px;
+	display: block;
+	width: 300px;
+	background: silver;
+	border: 1px solid gray;
+}
+
+
+
+.input {
+	display:block;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.input:last-child {
+	margin-bottom: 0px;
+}
+
+.info {
+	text-align: center;
+}

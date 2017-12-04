@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_auth_accounts_8php" kind="file" language="PHP">
+    <compoundname>AuthAccounts.php</compoundname>
+    <innerclass refid="class_auth_accounts" prot="public">AuthAccounts</innerclass>
+    <innernamespace refid="namespace_web_services">WebServices</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="23" refid="class_auth_accounts" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_auth_accounts" kindref="compound">AuthAccounts</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/><ref refid="class_authentication" kindref="compound">Authentication</ref>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>$users;</highlight></codeline>
+<codeline lineno="40" refid="class_auth_accounts_1a095c5d389db211932136b53f25f39685" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="class_auth_accounts_1a095c5d389db211932136b53f25f39685" kindref="member">__construct</ref>(){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$this-&gt;users<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Users();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56" refid="class_auth_accounts_1ae99dd092732ecd5e009bbaf741cbd8f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="class_auth_accounts_1ae99dd092732ecd5e009bbaf741cbd8f4" kindref="member">login</ref>(<ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref>,<sp/>$password){</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(empty(<ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref>)<sp/>||<sp/>empty($password))<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Проверяем<sp/>через<sp/>два<sp/>метода<sp/>валидации.<sp/>Должны<sp/>работать<sp/>оба.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Статический<sp/>метод<sp/>класса<sp/>User<sp/>для<sp/>валидации<sp/>аккаунта</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$firstValidation<sp/>=<sp/>Users::validate(<ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref>,<sp/>$password);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&apos;волшебный&apos;<sp/>метод<sp/>класса<sp/>User<sp/>validate&lt;username&gt;($password)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$userLoginFunction<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;validate&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$secondValidation<sp/>=<sp/>$this-&gt;users-&gt;$userLoginFunction($password);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>($firstValidation<sp/>&amp;&amp;<sp/>$secondValidation);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="classes/authentication/AuthAccounts.php"/>
+  </compounddef>
+</doxygen>

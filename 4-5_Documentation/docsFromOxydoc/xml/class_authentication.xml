@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_authentication" kind="class" language="PHP" prot="public">
+    <compoundname>Authentication</compoundname>
+    <basecompoundref refid="interface_i_account" prot="public" virt="non-virtual">IAccount</basecompoundref>
+    <derivedcompoundref refid="class_auth_accounts" prot="public" virt="non-virtual">AuthAccounts</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_authentication_1aa0a0a1ba307f02835128692ed454badd" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const AUTHENTICATION_ERR_MSG</definition>
+        <argsstring></argsstring>
+        <name>AUTHENTICATION_ERR_MSG</name>
+        <initializer>= &apos;Произошла ошибка или время Вашего сеанса закончилось. Попробуйте выполнит вход ещё раз.&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/Authentication.php" line="24" column="1" bodyfile="classes/Authentication.php" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_authentication_1a19ec872392da5d6131f9ad03b6c98339" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>$account</definition>
+        <argsstring></argsstring>
+        <name>$account</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/Authentication.php" line="32" column="1" bodyfile="classes/Authentication.php" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_authentication_1a0f1a1481ec90578496acb4ec793b6b0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getAccount</definition>
+        <argsstring>($user=&apos;&apos;)</argsstring>
+        <name>getAccount</name>
+        <reimplements refid="interface_i_account_1a0f1a1481ec90578496acb4ec793b6b0e">getAccount</reimplements>
+        <param>
+          <declname>$user</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns account object if valid.</para><para><simplesect kind="see"><para>Account::getAccount()  public </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user account login </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Account user account </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/Authentication.php" line="41" column="1" bodyfile="classes/Authentication.php" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_authentication_1a33bdd79e5da367ebddd4cfbdbbfc7cff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>isLoggedIn</definition>
+        <argsstring>()</argsstring>
+        <name>isLoggedIn</name>
+        <reimplements refid="interface_i_account_1a33bdd79e5da367ebddd4cfbdbbfc7cff">isLoggedIn</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>isLoggedIn method</para><para>Says whether the current user has provided valid login credentials.</para><para><simplesect kind="see"><para>Account::isLoggedIn()  public </para></simplesect>
+<simplesect kind="return"><para>boolean </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/Authentication.php" line="58" column="1" bodyfile="classes/Authentication.php" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_authentication_1ae99dd092732ecd5e009bbaf741cbd8f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>login</definition>
+        <argsstring>($user, $password)</argsstring>
+        <name>login</name>
+        <param>
+          <declname>$user</declname>
+        </param>
+        <param>
+          <declname>$password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>login method</para><para>Abstract method that must be implemented when sub-classing this class.</para><para>public <simplesect kind="return"><para>boolean </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/Authentication.php" line="71" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>IAccount</label>
+        <link refid="interface_i_account"/>
+      </node>
+      <node id="6">
+        <label>Authentication</label>
+        <link refid="class_authentication"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AuthAccounts</label>
+        <link refid="class_auth_accounts"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>IAccount</label>
+        <link refid="interface_i_account"/>
+      </node>
+      <node id="9">
+        <label>Authentication</label>
+        <link refid="class_authentication"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="classes/Authentication.php" line="23" column="1" bodyfile="classes/Authentication.php" bodystart="23" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_authentication_1a19ec872392da5d6131f9ad03b6c98339" prot="private" virt="non-virtual"><scope>Authentication</scope><name>$account</name></member>
+      <member refid="class_authentication_1aa0a0a1ba307f02835128692ed454badd" prot="public" virt="non-virtual"><scope>Authentication</scope><name>AUTHENTICATION_ERR_MSG</name></member>
+      <member refid="class_authentication_1a0f1a1481ec90578496acb4ec793b6b0e" prot="public" virt="non-virtual"><scope>Authentication</scope><name>getAccount</name></member>
+      <member refid="class_authentication_1a33bdd79e5da367ebddd4cfbdbbfc7cff" prot="public" virt="non-virtual"><scope>Authentication</scope><name>isLoggedIn</name></member>
+      <member refid="class_authentication_1ae99dd092732ecd5e009bbaf741cbd8f4" prot="public" virt="non-virtual"><scope>Authentication</scope><name>login</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

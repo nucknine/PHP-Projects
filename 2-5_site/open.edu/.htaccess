@@ -1,0 +1,3 @@
+# настройки сервера
+Options Indexes FollowSymLinks
+DirectoryIndex index.php

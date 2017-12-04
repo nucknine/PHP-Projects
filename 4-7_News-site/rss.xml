@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Последние новости</title>
+    <link>http://php-lvl3.local/PHP_lvl3_Specialist_mywork/01_SQLite/news/news.php</link>
+    <item>
+      <title><![CDATA[Test]]></title>
+      <link><![CDATA[http://.com]]></link>
+      <description><![CDATA[zgfhfuehfnbd hfhd hfld fdkfdd]]></description>
+      <pubDate><![CDATA[2017-28-08 17:52:47]]></pubDate>
+      <category><![CDATA[Политика]]></category>
+    </item>
+    <item>
+      <title><![CDATA[mysqli_connect]]></title>
+      <link><![CDATA[http://PHP.NET.com]]></link>
+      <description><![CDATA[Эта функция является псевдонимом: mysqli::__construct()
+
+Несмотря на то, что документация на mysqli::__construct() содержит примеры процедурного способа использования mysqli_connect(), здесь представлен короткий пример:]]></description>
+      <pubDate><![CDATA[2017-23-08 12:55:33]]></pubDate>
+      <category><![CDATA[Спорт]]></category>
+    </item>
+    <item>
+      <title><![CDATA[chr]]></title>
+      <link><![CDATA[http://PHPNET.com]]></link>
+      <description><![CDATA[chr — Возвращает символ по его коду]]></description>
+      <pubDate><![CDATA[2017-24-07 11:57:36]]></pubDate>
+      <category><![CDATA[Культура]]></category>
+    </item>
+    <item>
+      <title><![CDATA[strlen]]></title>
+      <link><![CDATA[http://phpsu.com]]></link>
+      <description><![CDATA[Возвращает длину строки string.]]></description>
+      <pubDate><![CDATA[2017-24-07 11:56:35]]></pubDate>
+      <category><![CDATA[Спорт]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Мэрия: Наплавной мост в Соломенное соответствует основным требованиям безопасности]]></title>
+      <link><![CDATA[http://dfdf.com]]></link>
+      <description><![CDATA[fddf]]></description>
+      <pubDate><![CDATA[2017-21-07 15:53:31]]></pubDate>
+      <category><![CDATA[Политика]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Класс SQLite3]]></title>
+      <link><![CDATA[http://PHPNET.com]]></link>
+      <description><![CDATA[Класс предоставляющий доступ к API SQLite 3 базе данных.]]></description>
+      <pubDate><![CDATA[2017-21-07 15:10:57]]></pubDate>
+      <category><![CDATA[Политика]]></category>
+    </item>
+    <item>
+      <title><![CDATA[The SQL SELECT DISTINCT Statement]]></title>
+      <link><![CDATA[http://w3c.com]]></link>
+      <description><![CDATA[The SELECT DISTINCT statement is used to return only distinct (different) values.
+
+Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.
+
+The SELECT DISTINCT statement is used to return only distinct (different) values.]]></description>
+      <pubDate><![CDATA[2017-21-07 11:36:22]]></pubDate>
+      <category><![CDATA[Культура]]></category>
+    </item>
+    <item>
+      <title><![CDATA[SQL LEFT JOIN Keyword]]></title>
+      <link><![CDATA[http://w3c.com]]></link>
+      <description><![CDATA[The LEFT JOIN keyword returns all records from the left table (table1), and the matched records from the right table (table2). The result is NULL from the right side, if there is no match.]]></description>
+      <pubDate><![CDATA[2017-21-07 11:35:56]]></pubDate>
+      <category><![CDATA[Культура]]></category>
+    </item>
+    <item>
+      <title><![CDATA[SQL INNER JOIN Keyword]]></title>
+      <link><![CDATA[http://w3c.com]]></link>
+      <description><![CDATA[The INNER JOIN keyword selects records that have matching values in both tables.]]></description>
+      <pubDate><![CDATA[2017-21-07 11:35:22]]></pubDate>
+      <category><![CDATA[Политика]]></category>
+    </item>
+  </channel>
+</rss>

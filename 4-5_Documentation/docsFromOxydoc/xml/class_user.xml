@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_user" kind="class" language="PHP" prot="public">
+    <compoundname>User</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_user_1af16f8f012c129eff0333cc8cbf4a3327" prot="private" static="yes" mutable="no">
+        <type>static</type>
+        <definition>$accounts</definition>
+        <argsstring></argsstring>
+        <name>$accounts</name>
+        <initializer>= [&apos;john&apos; =&gt; &apos;1234&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/User.php" line="33" column="1" bodyfile="classes/User.php" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_user_1ac9d42d46ac6ffcdea96d4a848e348ca6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static static validate</definition>
+        <argsstring>($user, $password)</argsstring>
+        <name>validate</name>
+        <param>
+          <declname>$user</declname>
+        </param>
+        <param>
+          <declname>$password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>static validate method</para><para>Given a user name and password, this method decides whether the user has a valid account and whether he/she supplied the correct password.</para><para><simplesect kind="see"><para><ref refid="class_auth_accounts_1ae99dd092732ecd5e009bbaf741cbd8f4" kindref="member">AuthAccounts::login()</ref>  public</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>account user name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>account password </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/User.php" line="48" column="1" bodyfile="classes/User.php" bodystart="48" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_user_1a3815af62ed9d37b2dcaa175379bbfeca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__call</definition>
+        <argsstring>($name, $arguments)</argsstring>
+        <name>__call</name>
+        <param>
+          <declname>$name</declname>
+        </param>
+        <param>
+          <declname>$arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>magic __call method</para><para>This method only implements a magic validate method where the second part of the method name is the user&apos;s account name.</para><para><simplesect kind="see"><para><ref refid="class_auth_accounts_1ae99dd092732ecd5e009bbaf741cbd8f4" kindref="member">AuthAccounts::login()</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_user_1ac9d42d46ac6ffcdea96d4a848e348ca6" kindref="member">validate()</ref>  public  boolean <ref refid="class_user_1ac9d42d46ac6ffcdea96d4a848e348ca6" kindref="member">validate&lt;user&gt;()</ref> <ref refid="class_user_1ac9d42d46ac6ffcdea96d4a848e348ca6" kindref="member">validate&lt;user&gt;</ref>(string $password) <ref refid="class_user_1ac9d42d46ac6ffcdea96d4a848e348ca6" kindref="member">validate</ref> a user  array $accounts used to <ref refid="class_user_1ac9d42d46ac6ffcdea96d4a848e348ca6" kindref="member">validate</ref> users &amp; passwords </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/User.php" line="65" column="1" bodyfile="classes/User.php" bodystart="65" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="classes/User.php" line="25" column="1" bodyfile="classes/User.php" bodystart="25" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_user_1af16f8f012c129eff0333cc8cbf4a3327" prot="private" virt="non-virtual"><scope>User</scope><name>$accounts</name></member>
+      <member refid="class_user_1a3815af62ed9d37b2dcaa175379bbfeca" prot="public" virt="non-virtual"><scope>User</scope><name>__call</name></member>
+      <member refid="class_user_1ac9d42d46ac6ffcdea96d4a848e348ca6" prot="public" virt="non-virtual"><scope>User</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

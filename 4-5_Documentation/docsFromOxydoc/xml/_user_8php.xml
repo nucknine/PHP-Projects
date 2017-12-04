@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_user_8php" kind="file" language="PHP">
+    <compoundname>User.php</compoundname>
+    <innerclass refid="class_user" prot="public">User</innerclass>
+    <innernamespace refid="namespace_web_services">WebServices</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="25" refid="class_user" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_user" kindref="compound">User</ref>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>$accounts<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;john&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;1234&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;mike&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;qwerty&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="48" refid="class_user_1ac9d42d46ac6ffcdea96d4a848e348ca6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="class_user_1ac9d42d46ac6ffcdea96d4a848e348ca6" kindref="member">validate</ref>(<ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref>,<sp/>$password){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Что-то<sp/>сделать</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self::$accounts[<ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref>]<sp/>==<sp/>$password;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65" refid="class_user_1a3815af62ed9d37b2dcaa175379bbfeca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="class_user_1a3815af62ed9d37b2dcaa175379bbfeca" kindref="member">__call</ref>($name,<sp/>$arguments){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(preg_match(</highlight><highlight class="stringliteral">&quot;/^validate(.*)$/&quot;</highlight><highlight class="normal">,<sp/>$name,<sp/>$matches)<sp/>&amp;&amp;<sp/>count($arguments)<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self::validate($matches[1],<sp/>$arguments[0]);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="classes/User.php"/>
+  </compounddef>
+</doxygen>

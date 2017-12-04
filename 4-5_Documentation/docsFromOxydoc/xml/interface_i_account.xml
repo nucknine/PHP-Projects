@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="interface_i_account" kind="interface" language="PHP" prot="public">
+    <compoundname>IAccount</compoundname>
+    <derivedcompoundref refid="class_authentication" prot="public" virt="non-virtual">Authentication</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_i_account_1a33bdd79e5da367ebddd4cfbdbbfc7cff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>isLoggedIn</definition>
+        <argsstring>()</argsstring>
+        <name>isLoggedIn</name>
+        <reimplementedby refid="class_authentication_1a33bdd79e5da367ebddd4cfbdbbfc7cff">isLoggedIn</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Did the current user log in?</para><para>This method simply answers the question &quot;Did the current user log in?&quot;</para><para>public <simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/IAccount.php" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_account_1a0f1a1481ec90578496acb4ec793b6b0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getAccount</definition>
+        <argsstring>($user=&apos;&apos;)</argsstring>
+        <name>getAccount</name>
+        <reimplementedby refid="class_authentication_1a0f1a1481ec90578496acb4ec793b6b0e">getAccount</reimplementedby>
+        <param>
+          <declname>$user</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns user account info</para><para>This method is used to retrieve the account corresponding to a given login. Note: it is not required that the user be currently logged in.</para><para>public <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user name of the account </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Account </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/IAccount.php" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>IAccount</label>
+        <link refid="interface_i_account"/>
+      </node>
+      <node id="12">
+        <label>Authentication</label>
+        <link refid="class_authentication"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AuthAccounts</label>
+        <link refid="class_auth_accounts"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="classes/IAccount.php" line="23" column="1" bodyfile="classes/IAccount.php" bodystart="23" bodyend="46"/>
+    <listofallmembers>
+      <member refid="interface_i_account_1a0f1a1481ec90578496acb4ec793b6b0e" prot="public" virt="non-virtual"><scope>IAccount</scope><name>getAccount</name></member>
+      <member refid="interface_i_account_1a33bdd79e5da367ebddd4cfbdbbfc7cff" prot="public" virt="non-virtual"><scope>IAccount</scope><name>isLoggedIn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

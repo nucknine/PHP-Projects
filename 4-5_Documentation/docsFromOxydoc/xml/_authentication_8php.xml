@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_authentication_8php" kind="file" language="PHP">
+    <compoundname>Authentication.php</compoundname>
+    <innerclass refid="class_authentication" prot="public">Authentication</innerclass>
+    <innernamespace refid="namespace_web_services">WebServices</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="23" refid="class_authentication" refkind="compound"><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_authentication" kindref="compound">Authentication</ref><sp/></highlight><highlight class="keyword">implements</highlight><highlight class="normal"><sp/><ref refid="interface_i_account" kindref="compound">IAccount</ref>{</highlight></codeline>
+<codeline lineno="24" refid="class_authentication_1aa0a0a1ba307f02835128692ed454badd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_authentication_1aa0a0a1ba307f02835128692ed454badd" kindref="member">AUTHENTICATION_ERR_MSG</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Произошла<sp/>ошибка<sp/>или<sp/>время<sp/>Вашего<sp/>сеанса<sp/>закончилось.<sp/>Попробуйте<sp/>выполнит<sp/>вход<sp/>ещё<sp/>раз.&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>$account<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="41" refid="class_authentication_1a0f1a1481ec90578496acb4ec793b6b0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="class_authentication_1a0f1a1481ec90578496acb4ec793b6b0e" kindref="member">getAccount</ref>(<ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($this-&gt;account<sp/>!==<sp/>null)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$this-&gt;account;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_authentication_1aa0a0a1ba307f02835128692ed454badd" kindref="member">AUTHENTICATION_ERR_MSG</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58" refid="class_authentication_1a33bdd79e5da367ebddd4cfbdbbfc7cff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="class_authentication_1a33bdd79e5da367ebddd4cfbdbbfc7cff" kindref="member">isLoggedIn</ref>(){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FIXME:<sp/>Что-то<sp/>пофиксили</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>($this-&gt;account<sp/>!==<sp/>null);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="class_authentication_1ae99dd092732ecd5e009bbaf741cbd8f4" kindref="member">login</ref>(<ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref>,<sp/>$password);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="classes/Authentication.php"/>
+  </compounddef>
+</doxygen>

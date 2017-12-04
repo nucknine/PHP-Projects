@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+  <parser>
+    <target>./output</target>
+    <encoding>utf8</encoding>
+    <markers>
+      <item>TODO</item>
+      <item>FIXME</item>
+    </markers>
+    <extensions>
+      <extension>php</extension>
+    </extensions>
+  </parser>
+  <transformer>
+    <target>./output</target>
+  </transformer>
+  <transformations>
+    <template name="responsive-twig" />
+  </transformations>
+  <files>
+    <directory>.</directory>
+    <!--<file>test.php</file>
+    <file>bin/*</file>
+    <directory>src</directory>
+    <directory>tes??</directory>
+    <ignore>test/*</ignore>-->
+  </files>
+</phpdoc>

@@ -1,0 +1,482 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Trebuchet MS, Trebuchet MS Bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+  /*  Пример подключения изображения из папки  img */
+
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.container {
+    width:1020px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+
+.main-header {
+    padding: 0;
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 80px;
+    background-color: #6451d5;
+}
+
+.logo {
+    float:left;
+}
+
+.main-menu ul{
+    float:right;
+    font-family: Trebuchet MS;
+    line-height: 30px;
+    font-size:18px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+.main-menu li {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 55px;
+}
+
+.main-menu li:last-child {
+    margin-right: 0px;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-top::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header-top {
+    max-height: 82px;
+    padding: 0;
+    margin: 0;
+
+}
+.promo {
+    position: relative;
+    margin: 0;
+    margin-top: 92px;
+    padding: 0;
+    width: 445px;
+}
+
+.promo::after {
+    content:"";
+    position: absolute;
+    display: block;
+    background-image: url("../img/items.png");
+    width: 653px;
+    height: 451px;
+    top:-20px;
+    left:380px;
+}
+
+.promo-title {
+    font-family: Trebuchet MS;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color:#fff;
+}
+
+.promo p {
+    font-family: Tahoma;
+    line-height: 30px;
+    font-size: 18px;
+    color:#bcb3f2;
+    width:320px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    margin: 0;
+    padding: 24px;
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+}
+
+.btn-prpl {
+    background-color: #382d78;
+}
+
+.promo .btn {
+    width:270px;
+}
+
+.features {
+    margin:0;
+    background-color: #efefef;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.features-item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    display: inline-block;
+    width: 320px;
+    float:left;
+    margin-right: 30px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.features-item:last-child {
+    margin-right: 0px;
+}
+
+.features .container::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.features-title {
+    line-height: 24px;
+    font-size: 22px;
+    margin: 0;
+    margin-top: 10px;
+
+}
+
+.features-icon {
+    position: absolute;
+    content: "";
+    display:block;
+    top:0px;
+    left:125px;
+    width:70px;
+    height:67px;
+    background-image: url(../img/features-sprite.png);
+    background-repeat: no-repeat;
+    background-position:  -2px 0px;
+}
+
+.features-icon-practice {
+    background-position:  -74px 0px;
+}
+
+.features-icon-work {
+    background-position:  -162px 0px;
+}
+
+.features-item p {
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    font-size: 18px;
+    margin-top: 25px;
+    color: #555;
+
+}
+
+.schedule {
+    padding: 30px;
+    margin: 0;
+    padding-bottom: 75px;
+    padding-top: 50px;
+    background-color: #fff;
+}
+
+.schedule-title {
+    padding: 0;
+    margin: 0;
+    font-family: Trebuchet MS;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.schedule-table {
+    line-height: 30px;
+    font-size: 18px;
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.schedule-table td {
+    margin: 0;
+    border: 2px solid #a7a7a7;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 45px;
+    padding-bottom: 20px;
+    text-align: left;
+    vertical-align: top;
+
+}
+
+.schedule-table thead{
+    background-color:#efefef;
+}
+
+.schedule-table tbody strong {
+    font-family: Trebuchet MS;
+    line-height: 24px;
+    font-size: 22px;
+}
+
+.schedule-table thead td:first-child{
+    width: 211px;
+}
+
+.contacts {
+    margin: 0;
+    padding:50px 30px;
+    background-color: #efefef;
+}
+
+.contacts-title {
+    padding: 0;
+    margin: 0;
+    font-family: Trebuchet MS;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.contacts-form {
+    padding: 0;
+    margin: 0;
+    float:left;
+    width:640px;
+}
+
+.contacts-form td {
+    padding-bottom:16px;
+}
+
+.contacts-form .title{
+    font-family: Trebuchet MS;
+    line-height: 24px;
+    font-size: 18px;
+    padding-right: 15px;
+    padding-top: 15px;
+    vertical-align: top;
+    text-align: right;
+}
+
+.contacts-form .field {
+    padding-left: 0;
+
+    width: 530px;
+    font-family: Tahoma;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.contacts-form input[type="text"],
+.contacts-form textarea {
+    width:100%;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding:16px;
+    padding-left:20px;
+    outline:none;
+    border:2px solid #b2b2b2;
+}
+
+.contacts-form textarea {
+    min-height: 100px;
+}
+
+.contacts-form .radio {
+    height: 54px;
+}
+
+.contacts-form input[type="radio"] {
+    margin-right: 30px;
+}
+
+.contacts-form .radio label {
+    margin-right: 60px;
+}
+
+.contacts-form input[type="text"]:focus,
+.contacts-form textarea:hover {
+    border: 2px solid #6451d5;
+}
+
+.contacts-instruction {
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma;
+    line-height: 24px;
+    font-size: 18px;
+    float: right;
+    width:320px;
+    margin-bottom: 20px;
+}
+
+.contacts-instruction h3 {
+    padding: 0;
+    margin: 0;
+    font-family: Trebuchet MS;
+    line-height: 30px;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.contacts-instruction p {
+    margin-bottom: 20px;
+}
+
+.contacts-instruction .contacts-alert {
+
+}
+
+.contacts .container::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.contacts-form .btn {
+    width: 530px;
+}
+
+
+.main-footer {
+    font-family: Tahoma;
+    line-height: 24px;
+    font-size: 18px;
+    margin: 0;
+    padding:60px 30px;
+    background-color: #2a2546;
+}
+
+.main-footer .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer-address {
+    display: block;
+    float: left;
+    width:320px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.footer-address p {
+    margin:0px;
+}
+
+
+.footer-address .logo {
+    float: none;
+    padding: 0;
+    margin:0;
+    margin-bottom: 85px;
+}
+
+
+.footer-menu {
+    display: block;
+    float:right;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    width:170px;
+}
+
+
+.footer-menu ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+    list-style: none;
+}
+
+.footer-menu li {
+    margin-bottom: 30px;
+}
+
+.footer-menu h3 {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.footer-menu a {
+    color: #a39ebe;
+    text-decoration: none;
+}
+
+
+.gl0 {
+    display: block;
+    content: "";
+    position: relative;
+    background-color:coral;
+    opacity: 0.5;
+}
+
+.gl1 {
+    display: block;
+    content: "";
+    position: relative;
+    background-color: blue;
+    opacity: 0.9;
+}
+
+/*
+Высота строк большей части элементов — 24px
+
+Элементы с другой высотой строки:
+Промо-заголовок в шапке - 50px
+Абзац под промо-заголовком - 30px
+Заголовок «Формы обучения» - 50px
+Весь нежирный шрифт в таблице - 30px
+Заголовок «Обратная связь» - 50px
+Заголовок «Заинтересовались обучением на нашей кафедре?» - 30px
+*/

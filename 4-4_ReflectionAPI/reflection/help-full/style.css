@@ -1,0 +1,74 @@
+body{
+  font-family: courier;
+  font-size: 10pt;
+}
+div{
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+h1, h2, h3, h4{
+  color:#666;
+  font-family: verdana, arial, helvetica, sans-serif;
+  background-color:#bbb;
+}
+h1 { 
+  font-size: 170%; 
+}
+h2 {
+  font-size: 150%; 
+}
+h3 { 
+  font-size: 120%; 
+}
+h4 { 
+  font-size: 100%;
+}
+td.top{
+  padding-bottom:5px;
+  border-bottom:dotted 1px black;
+}
+td.centre{
+  width:80%;
+  vertical-align:top;
+  border-left: 1px dotted black; 
+  padding-left:15px;padding-top:10px;
+}
+span.keyword{
+  color:blue;
+  font-weight: bold;  
+}
+span.name{
+  font-weight: bold;
+}
+span.comment{
+	font-style:italic;color:green;
+}
+span.fulldescription{
+  font-size: larger; 
+}
+span.red{
+	color:red;
+}
+label{
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+@media print{
+  body{ 
+    margin:0px; 
+  }
+  /* bug in Firefox - span font can't be courier*/
+  span{    
+    font-family: helvetica;
+  }
+  td.top{
+    border:none;
+  }
+  td.centre{
+    border:none;
+  }
+  td.sidebar{
+    display:none;
+  }  
+  h1, h2, h3, h4{
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_i_account_8php" kind="file" language="PHP">
+    <compoundname>IAccount.php</compoundname>
+    <innerclass refid="interface_i_account" prot="public">IAccount</innerclass>
+    <innernamespace refid="namespace_web_services">WebServices</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="23" refid="interface_i_account" refkind="compound"><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_i_account" kindref="compound">IAccount</ref>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="interface_i_account_1a33bdd79e5da367ebddd4cfbdbbfc7cff" kindref="member">isLoggedIn</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="interface_i_account_1a0f1a1481ec90578496acb4ec793b6b0e" kindref="member">getAccount</ref>(<ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="classes/IAccount.php"/>
+  </compounddef>
+</doxygen>

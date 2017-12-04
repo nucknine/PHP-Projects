@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_auth_accounts" kind="class" language="PHP" prot="public">
+    <compoundname>AuthAccounts</compoundname>
+    <basecompoundref refid="class_authentication" prot="public" virt="non-virtual">Authentication</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_auth_accounts_1a28005d22fa7ef2dfe215ad886b497d9c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>$users</definition>
+        <argsstring></argsstring>
+        <name>$users</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/authentication/AuthAccounts.php" line="29" column="1" bodyfile="classes/authentication/AuthAccounts.php" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_auth_accounts_1a095c5d389db211932136b53f25f39685" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__construct</definition>
+        <argsstring>()</argsstring>
+        <name>__construct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_auth_accounts" kindref="compound">AuthAccounts</ref> constructor</para><para>Instantiates a new <ref refid="class_user" kindref="compound">User</ref> object and stores a reference in the <ref refid="" kindref="compound">users</ref> property.</para><para><simplesect kind="see"><para><ref refid="class_user" kindref="compound">User</ref>  public </para></simplesect>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/authentication/AuthAccounts.php" line="40" column="1" bodyfile="classes/authentication/AuthAccounts.php" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_auth_accounts_1ae99dd092732ecd5e009bbaf741cbd8f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>login</definition>
+        <argsstring>($user, $password)</argsstring>
+        <name>login</name>
+        <param>
+          <declname>$user</declname>
+        </param>
+        <param>
+          <declname>$password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>login method</para><para>Uses the reference <ref refid="class_user" kindref="compound">User</ref> class to handle user validation.</para><para><simplesect kind="see"><para><ref refid="class_user" kindref="compound">User</ref> </para></simplesect>
+<xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>Decide which validate method to user instead of both  public </para></xrefdescription></xrefsect><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>account user name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>account password </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="classes/authentication/AuthAccounts.php" line="56" column="1" bodyfile="classes/authentication/AuthAccounts.php" bodystart="56" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IAccount</label>
+        <link refid="interface_i_account"/>
+      </node>
+      <node id="1">
+        <label>Authentication</label>
+        <link refid="class_authentication"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>AuthAccounts</label>
+        <link refid="class_auth_accounts"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>IAccount</label>
+        <link refid="interface_i_account"/>
+      </node>
+      <node id="4">
+        <label>Authentication</label>
+        <link refid="class_authentication"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AuthAccounts</label>
+        <link refid="class_auth_accounts"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="classes/authentication/AuthAccounts.php" line="23" column="1" bodyfile="classes/authentication/AuthAccounts.php" bodystart="23" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_auth_accounts_1a28005d22fa7ef2dfe215ad886b497d9c" prot="private" virt="non-virtual"><scope>AuthAccounts</scope><name>$users</name></member>
+      <member refid="class_auth_accounts_1a095c5d389db211932136b53f25f39685" prot="public" virt="non-virtual"><scope>AuthAccounts</scope><name>__construct</name></member>
+      <member refid="class_authentication_1aa0a0a1ba307f02835128692ed454badd" prot="public" virt="non-virtual"><scope>AuthAccounts</scope><name>AUTHENTICATION_ERR_MSG</name></member>
+      <member refid="class_authentication_1a0f1a1481ec90578496acb4ec793b6b0e" prot="public" virt="non-virtual"><scope>AuthAccounts</scope><name>getAccount</name></member>
+      <member refid="class_authentication_1a33bdd79e5da367ebddd4cfbdbbfc7cff" prot="public" virt="non-virtual"><scope>AuthAccounts</scope><name>isLoggedIn</name></member>
+      <member refid="class_auth_accounts_1ae99dd092732ecd5e009bbaf741cbd8f4" prot="public" virt="non-virtual"><scope>AuthAccounts</scope><name>login</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_b02e4219757ae4e3a0f1714873865bbf" kind="dir">
+    <compoundname>classes</compoundname>
+    <innerdir refid="dir_e523e7d69f8363a31af537a63980c08f">classes/authentication</innerdir>
+    <innerfile refid="_authentication_8php">Authentication.php</innerfile>
+    <innerfile refid="_i_account_8php">IAccount.php</innerfile>
+    <innerfile refid="_user_8php">User.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="classes/"/>
+  </compounddef>
+</doxygen>

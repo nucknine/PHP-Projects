@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="index_8php" kind="file" language="PHP">
+    <compoundname>index.php</compoundname>
+    <innernamespace refid="namespace_web_services">WebServices</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="index_8php_1a20d7415a9c3391b32d7fe2136fce6e2c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$auth</definition>
+        <argsstring></argsstring>
+        <name>$auth</name>
+        <initializer>= new <ref refid="class_auth_accounts" kindref="compound">AuthAccounts</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="index.php" line="24" column="1" bodyfile="index.php" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$user</definition>
+        <argsstring></argsstring>
+        <name>$user</name>
+        <initializer>= trim(strip_tags($_POST[&apos;user&apos;]))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="index.php" line="26" column="1" bodyfile="index.php" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="index_8php_1a12ec2780b52bd1c54d38c2f981c0349f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$pass</definition>
+        <argsstring></argsstring>
+        <name>$pass</name>
+        <initializer>= trim(strip_tags($_POST[&apos;password&apos;]))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="index.php" line="27" column="1" bodyfile="index.php" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>phpdoc<sp/>-d<sp/>&quot;./src&quot;<sp/>-t<sp/>&quot;./docs&quot;<sp/>--template=&quot;responsive-twig&quot;</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*/</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">require_once(</highlight><highlight class="stringliteral">&apos;classes/IAccount.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">require_once(</highlight><highlight class="stringliteral">&apos;classes/Authentication.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">require_once(</highlight><highlight class="stringliteral">&apos;classes/User.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">require_once(</highlight><highlight class="stringliteral">&apos;classes/Authentication/AuthAccounts.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="index_8php_1a20d7415a9c3391b32d7fe2136fce6e2c" refkind="member"><highlight class="normal"><ref refid="index_8php_1a20d7415a9c3391b32d7fe2136fce6e2c" kindref="member">$auth</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_auth_accounts" kindref="compound">AuthAccounts</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>uncomment<sp/>for<sp/>testing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" refkind="member"><highlight class="normal"><ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref><sp/>=<sp/>trim(strip_tags($_POST[</highlight><highlight class="stringliteral">&apos;user&apos;</highlight><highlight class="normal">]));</highlight></codeline>
+<codeline lineno="27" refid="index_8php_1a12ec2780b52bd1c54d38c2f981c0349f" refkind="member"><highlight class="normal"><ref refid="index_8php_1a12ec2780b52bd1c54d38c2f981c0349f" kindref="member">$pass</ref><sp/>=<sp/>trim(strip_tags($_POST[</highlight><highlight class="stringliteral">&apos;password&apos;</highlight><highlight class="normal">]));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!empty(<ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref>)<sp/>&amp;&amp;<sp/>!empty($password))<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>$loginSucceeded<sp/>=<sp/><ref refid="index_8php_1a20d7415a9c3391b32d7fe2136fce6e2c" kindref="member">$auth</ref>-&gt;login(<ref refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kindref="member">$user</ref>,<sp/>$password);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($loginSucceeded<sp/>===<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&quot;Поздравляем!<sp/>Вы<sp/>попали<sp/>по<sp/>адресу\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&quot;Ошибка!<sp/>Попробуйте<sp/>ещё<sp/>раз\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="index.php"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+.content {
+	width: 300px;
+	height: auto;
+	margin: 200px auto 0 auto;
+}
+.capcha {
+	position: relative;
+	margin-bottom: 10px;
+	font-size: 0;
+	padding: 0;
+
+}
+.img {
+	display: inline-block;
+	width: 210px;
+	/*margin: 0 auto 20px auto;*/
+	/*max-width: 100%;
+	height: auto;*/
+}
+
+.refresh {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	display: inline-block;
+}
+.refbtn {
+	position: absolute;
+	top:0;
+	width: 90px;
+	height:40px;
+
+}
+.form {
+	box-sizing: border-box;
+	padding: 20px;
+	/*font-size: 0;*/
+	display: block;
+	width: 300px;
+	background: silver;
+	border: 1px solid gray;
+}
+
+
+
+.input {
+	display:block;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.input:last-child {
+	margin-bottom: 0px;
+}
+
+.info {
+	text-align: center;
+}

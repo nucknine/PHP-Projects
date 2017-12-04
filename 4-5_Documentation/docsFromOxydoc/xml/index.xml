@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="class_auth_accounts" kind="class"><name>AuthAccounts</name>
+    <member refid="class_auth_accounts_1a28005d22fa7ef2dfe215ad886b497d9c" kind="variable"><name>$users</name></member>
+    <member refid="class_auth_accounts_1a095c5d389db211932136b53f25f39685" kind="function"><name>__construct</name></member>
+    <member refid="class_auth_accounts_1ae99dd092732ecd5e009bbaf741cbd8f4" kind="function"><name>login</name></member>
+  </compound>
+  <compound refid="class_authentication" kind="class"><name>Authentication</name>
+    <member refid="class_authentication_1aa0a0a1ba307f02835128692ed454badd" kind="variable"><name>AUTHENTICATION_ERR_MSG</name></member>
+    <member refid="class_authentication_1a19ec872392da5d6131f9ad03b6c98339" kind="variable"><name>$account</name></member>
+    <member refid="class_authentication_1a0f1a1481ec90578496acb4ec793b6b0e" kind="function"><name>getAccount</name></member>
+    <member refid="class_authentication_1a33bdd79e5da367ebddd4cfbdbbfc7cff" kind="function"><name>isLoggedIn</name></member>
+    <member refid="class_authentication_1ae99dd092732ecd5e009bbaf741cbd8f4" kind="function"><name>login</name></member>
+  </compound>
+  <compound refid="interface_i_account" kind="interface"><name>IAccount</name>
+    <member refid="interface_i_account_1a33bdd79e5da367ebddd4cfbdbbfc7cff" kind="function"><name>isLoggedIn</name></member>
+    <member refid="interface_i_account_1a0f1a1481ec90578496acb4ec793b6b0e" kind="function"><name>getAccount</name></member>
+  </compound>
+  <compound refid="class_user" kind="class"><name>User</name>
+    <member refid="class_user_1af16f8f012c129eff0333cc8cbf4a3327" kind="variable"><name>$accounts</name></member>
+    <member refid="class_user_1ac9d42d46ac6ffcdea96d4a848e348ca6" kind="function"><name>validate</name></member>
+    <member refid="class_user_1a3815af62ed9d37b2dcaa175379bbfeca" kind="function"><name>__call</name></member>
+  </compound>
+  <compound refid="namespace_web_services" kind="namespace"><name>WebServices</name>
+  </compound>
+  <compound refid="_authentication_8php" kind="file"><name>Authentication.php</name>
+  </compound>
+  <compound refid="_auth_accounts_8php" kind="file"><name>AuthAccounts.php</name>
+  </compound>
+  <compound refid="_i_account_8php" kind="file"><name>IAccount.php</name>
+  </compound>
+  <compound refid="_user_8php" kind="file"><name>User.php</name>
+  </compound>
+  <compound refid="index_8php" kind="file"><name>index.php</name>
+    <member refid="index_8php_1a20d7415a9c3391b32d7fe2136fce6e2c" kind="variable"><name>$auth</name></member>
+    <member refid="index_8php_1a598ca4e71b15a1313ec95f0df1027ca5" kind="variable"><name>$user</name></member>
+    <member refid="index_8php_1a12ec2780b52bd1c54d38c2f981c0349f" kind="variable"><name>$pass</name></member>
+  </compound>
+  <compound refid="todo" kind="page"><name>todo</name>
+  </compound>
+  <compound refid="dir_e523e7d69f8363a31af537a63980c08f" kind="dir"><name>classes/authentication</name>
+  </compound>
+  <compound refid="dir_b02e4219757ae4e3a0f1714873865bbf" kind="dir"><name>classes</name>
+  </compound>
+</doxygenindex>
